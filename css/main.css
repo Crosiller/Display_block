@@ -5,16 +5,25 @@ header *{
     line-height: 7.5rem;
 }
 
-div.gallery-primary{         /*conteneur */
+div.gallery-primary{      /*conteneur */
     max-width: 120rem;
     margin: 5rem auto;
 }
 div.gallery-primary ul li{
     overflow: hidden;
+    padding: 1 rem 0 0 1rem;
 }
 
 div.gallery-primary ul li{
     display: block;
     float: left;
+    margin: 0 1rem 1rem 0;
     width: calc(100% / 4);
+}
+div.gallery-primary ul li :nth-of-type(5),
+div.gallery-primary ul li :nth-of-type(6){
+    width: calc(100% / 2 - 1rem)
+}
+div.gallery-primary ul li:last-child {
+    width: calc(100% / 1 - 1rem);
 }
